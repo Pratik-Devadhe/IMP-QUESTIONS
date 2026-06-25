@@ -1,12 +1,5 @@
 # Ultimate Interview Preparation Guide: Programming, Web Development, Java & Spring Boot
 
-> [!WARNING]
-> **CRITICAL SECURITY ALERT:**
-> You included a raw OpenAI API key in your query: `sk-proj-DTh...`.
-> Exposing secret keys is a major security risk. **Please immediately revoke this key** in your [OpenAI API Keys Dashboard](https://platform.openai.com/api-keys) to prevent unauthorized billing and usage. Never commit API keys to version control (Git) or share them in plain text.
-
----
-
 ## Table of Contents
 1. [Category 1: Core Programming Concepts & Web Architecture](#category-1-core-programming-concepts--web-architecture)
 2. [Category 2: Python, FastAPI & Web APIs](#category-2-python-fastapi--web-apis)
@@ -882,4 +875,3 @@ Developing database applications using plain JDBC without an ORM introduces seve
 #### Q5: Pessimistic Locking vs. Optimistic Locking.
 * **Optimistic Locking:** Assumes conflict is rare. Uses a `@Version` field (integer or timestamp) on the entity. When committing, Hibernate checks if the version in the database matches. If not, another transaction updated it, throwing `OptimisticLockException`.
 * **Pessimistic Locking:** Assumes conflicts are frequent. It locks the database record immediately using SQL features like `SELECT ... FOR UPDATE`, blocking other transactions until the lock is released. Good for transaction-sensitive data like banking balances.
-
